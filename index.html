@@ -1,24 +1,26 @@
 // Brian's Fizz Buzz with a BOOM!... with long winded if statements.
 // Try it here: https://jsbin.com/?html,output
 
-var f = "Fizz",
-    b = "Buzz";
 
-for (i = 1; i <= 101; i++)
-{
-    if (i%3 == 0 && i%5 == 0) {
-        console.log(f + b);
-    } else if (i%3 == 0) {	// if there is no remainder, then i is divisible by 3
-        console.log(f);
-    } else if (i%5 == 0) {
-        console.log(b);
-    } else {
-      
-      if(i >= 100) {
-        console.log("BOOM!");
-      }else{
-        console.log(i);
-      }
-      
+<script>
+    var f = "Fizz",
+        b = "Buzz";
+
+    for (i = 1; i <= 101; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            console.log(f + b);
+        } else if (i % 3 == 0) {	// if there is no remainder, then i is divisible by 3
+            console.log(f);
+        } else if (i % 5 == 0) {
+            console.log(b);
+        } else {
+
+            if (i >= 100) {
+                console.log("BOOM!");
+            } else {
+                console.log(i);
+            }
+
+        }
     }
-}
+</script>
